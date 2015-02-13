@@ -24,7 +24,7 @@ namespace Assignment3
 
        //CONSTRUCTOR+++++++++++++++++++++++++++++++++
 
-       public void Planet(string name, double diameter, double mass)
+       public Planet(string name, double diameter, double mass)
        {
            this._name = name;
            this._diameter = diameter;
