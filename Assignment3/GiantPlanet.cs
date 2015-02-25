@@ -19,18 +19,18 @@ namespace Assignment3
 
         //METHODS+++++++++++++++++++++++++++++
 
-        public bool HasMoons()
-        {
-            return (MoonCount > 0) ? true:false;
-           
-        }
+      
         public bool HasRings()
             {
             return (RingCount > 0) ? true : false;
             
             }
 
+        public bool HasMoons()
+        {
+            return (MoonCount > 0) ? true : false;
 
+        }
 
 
             

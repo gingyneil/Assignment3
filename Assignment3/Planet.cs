@@ -108,7 +108,7 @@ namespace Assignment3
        // OVERRIDDEN METHODS+++++++++++++++++++++++++++++
        public override string ToString()
        {
-           return this.Name + " is the name and " + this.Diameter + " is the Diameter and " + this.Mass + " is the mass. ";
+           return this.Name + " is the Name and " + this.Diameter + " is the Diameter and " + this.Mass + " is the Mass. ";
            
        }
    }

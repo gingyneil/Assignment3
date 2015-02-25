@@ -6,24 +6,30 @@ using System.Threading.Tasks;
 
 namespace Assignment3
 {
-    class TerrestrialPlanet : Planet
+    class TerrestrialPlanet : Planet, IHasMoons,IHabitable
     {
         //PRIVATE INSTANCE VARIALBLES+++++++++++++++++++++++++++++++++++++++++++++
        private bool _oxygen;
 
 
-        public TerrestrialPlanet(bool oxygen, string name, double diameter, double mass) :base(name, diameter,mass)
+        public TerrestrialPlanet( string name, double diameter, double mass, bool oxygen)
+            :base(name, diameter,mass)
         {
             this._oxygen = oxygen;
-        
-    
-    
-    
-    
-        }
+            
+         }
 
-    
-    
+        public bool HasMoons()
+        {
+            return (MoonCount > 0) ? true : false;
+
+        }
+        public bool Habitable() 
+        {
+            return  (_oxygen == true) ? true : false;
+            
+            
+        }
     }
 
 

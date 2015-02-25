@@ -12,7 +12,7 @@ namespace Assignment3
         {
           GiantPlanet myGiantPlanet = new GiantPlanet("Naboo",3.00,50000.00,"Gas");
         Console.WriteLine (myGiantPlanet.ToString());
-        TerrestrialPlanet myTerrestrialPlanet = new TerrestrialPlanet(true,"Saturn",1000000000.00,40000000000);
+        TerrestrialPlanet myTerrestrialPlanet = new TerrestrialPlanet("Saturn",1000000000.00,40000000000, true);
         Console.WriteLine(myTerrestrialPlanet.ToString()); 
         waitForAnyKey();
         }
