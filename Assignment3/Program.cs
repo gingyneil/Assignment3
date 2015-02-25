@@ -10,6 +10,20 @@ namespace Assignment3
     {
         static void Main(string[] args)
         {
+          GiantPlanet myGiantPlanet = new GiantPlanet("Naboo",3.00,50000.00,"Gas");
+        Console.WriteLine (myGiantPlanet.ToString());
+        TerrestrialPlanet myTerrestrialPlanet = new TerrestrialPlanet(true,"Saturn",1000000000.00,40000000000);
+        Console.WriteLine(myTerrestrialPlanet.ToString()); 
+        waitForAnyKey();
+        }
+
+        private static void waitForAnyKey()
+        {
+            Console.Write("\n");
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++");
+            Console.WriteLine("Press any key to Continue");
+            Console.ReadKey();
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++");
         }
     }
 }

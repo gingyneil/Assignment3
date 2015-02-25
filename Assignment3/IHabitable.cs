@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Assignment3
 {
-    interface IHasRings
+    interface IHabitable
     {
-         bool HasRings();
+        bool Habitable();
     }
 }

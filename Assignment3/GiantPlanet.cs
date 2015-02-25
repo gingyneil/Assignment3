@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment3
 {
-    class GiantPlanet : Planet
+    class GiantPlanet : Planet, IHasMoons, IHasRings
     {
         //PRIVATE INSTANCE VARIABLES++++++++++++++++++++++++++++++++++++++++++
         string _type;
@@ -21,30 +21,18 @@ namespace Assignment3
 
         public bool HasMoons()
         {
-            if (MoonCount > 0)
-            {
-                return true;
-            }
-
-            else
-            {
-                return false;
-            }
+            return (MoonCount > 0) ? true:false;
+           
         }
         public bool HasRings()
             {
-            if(RingCount > 0)
-            {
-            return true;
-            }
-            else
-            {
-            return false;
+            return (RingCount > 0) ? true : false;
+            
             }
 
 
 
 
-            }
+            
         }
     }

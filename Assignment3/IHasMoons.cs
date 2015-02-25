@@ -8,5 +8,6 @@ namespace Assignment3
 {
     interface IHasMoons
     {
+        bool HasMoons();
     }
 }

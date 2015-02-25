@@ -6,16 +6,28 @@ using System.Threading.Tasks;
 
 namespace Assignment3
 {
-    class TerrestialPlanet : Planet
+    class TerrestrialPlanet : Planet
     {
         //PRIVATE INSTANCE VARIALBLES+++++++++++++++++++++++++++++++++++++++++++++
-        bool _oxygen;
+       private bool _oxygen;
 
 
-        public TerrestialPlanet(bool oxygen, string name, double diameter, double mass) :base(name, diameter,mass)
+        public TerrestrialPlanet(bool oxygen, string name, double diameter, double mass) :base(name, diameter,mass)
         {
             this._oxygen = oxygen;
+        
+    
+    
+    
+    
         }
 
+    
+    
     }
+
+
+
+
 }
+

@@ -22,8 +22,81 @@ namespace Assignment3
        private int _ringCount;
        private double _rotationPeriod;
 
-       //CONSTRUCTOR+++++++++++++++++++++++++++++++++
 
+       //PUBLIC PROPERTIES++++++++++++++++++++++++++++
+       public double Diameter
+       {
+           get
+           {
+               return this._diameter; //Returns value of instance variable, (Read-only)
+           }
+       }
+
+       public double Mass
+       {
+           get
+           {
+               return this._mass; //(Read-only)
+           }
+       }
+
+
+       public int MoonCount
+       {
+           get
+           {
+               return this._moonCount;
+           }
+
+           set
+           {
+               this._moonCount = value; //Sets instance variable, accessed through MoonCount Property.
+           }
+       }
+
+       public double OrbitalPeriod
+       {
+           get
+           {
+               return this._orbitalPeriod;
+           }
+           set
+           {
+               this._orbitalPeriod = value;
+           }
+       }
+
+       public int RingCount
+       {
+           get
+           {
+               return this._ringCount;
+           }
+           set
+           {
+               this._ringCount = value;
+           }
+       }
+
+       public double RotationPeriod
+       {
+           get
+           {
+               return this._rotationPeriod;
+           }
+           set
+           {
+               this._rotationPeriod = value;
+           }
+       }
+       public string Name
+       {
+           get
+           {
+               return this._name; //(Read-Only)
+           }
+       }
+       //CONSTRUCTOR+++++++++++++++++++++++++++++++++
        public Planet(string name, double diameter, double mass)
        {
            this._name = name;
@@ -31,83 +104,12 @@ namespace Assignment3
            this._mass = mass;
        }
       
-       
-       //PUBLIC PROPERTIES++++++++++++++++++++++++++++
-       public double Diameter 
-       {
-           get 
-           {
-               return this._diameter; //Returns value of instance variable, (Read-only)
-           }
-       }
-
-       public double Mass 
-       {
-           get 
-           {
-               return this._mass; //(Read-only)
-           }
-       }
-
-       public string Name 
-       {
-           get 
-           {
-              return this._name; //(Read-Only)
-           }
-       }
-       public int MoonCount 
-       {
-           get 
-           {
-               return this._moonCount;
-           }
-
-           set 
-           {
-               this._moonCount = value; //Sets instance variable, accessed through MoonCount Property.
-           }
-       }
-
-       public double OrbitalPeriod 
-       {
-           get 
-           {
-               return this._orbitalPeriod;
-           }
-           set 
-           {
-               this._orbitalPeriod = value;
-           }
-       }
-
-       public int RingCount 
-       {
-           get 
-           {
-               return this._ringCount;
-           }
-           set 
-           {
-               this._ringCount = value;
-           }
-       }
-
-       public double RotationPeriod 
-       {
-           get 
-           {
-               return this._rotationPeriod;
-           }
-           set 
-           {
-               this._rotationPeriod = value;
-           }
-       }
+      
        // OVERRIDDEN METHODS+++++++++++++++++++++++++++++
        public override string ToString()
        {
            return this.Name + " is the name and " + this.Diameter + " is the Diameter and " + this.Mass + " is the mass. ";
+           
        }
    }
 }
